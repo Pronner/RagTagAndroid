@@ -1,7 +1,8 @@
 {
 "ovpn_file":[
   {   "id":0,
-  "file":"proto udp
+  "file":"client
+proto udp
 explicit-exit-notify
 remote 143.198.190.95 1194
 dev tun
@@ -77,7 +78,8 @@ d444626b713f6e6546a82c44704e0de8
 552470beeaba1e7f44c9c16cbf79e69b
 a37e7b0f6f2c26978b4378fcceb49b0d
 -----END OpenVPN Static key V1-----
-</tls-crypt>"},
+</tls-crypt>
+"},
 
 
 ]
