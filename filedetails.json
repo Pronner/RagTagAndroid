@@ -1,6 +1,25 @@
 {
 "ovpn_file":[
-  {"id":0,"file":"setenv CLIENT_CERT 0
+  {   "id":0,
+  "file":"dev tun
+proto tcp
+
+remote 185.107.56.75 7770
+remote 185.107.56.75 8443
+remote 185.107.56.75 443
+
+remote-random
+resolv-retry infinite
+nobind
+
+# The following setting is only needed for old OpenVPN clients compatibility. New clients
+# automatically negotiate the optimal cipher.
+cipher AES-256-CBC
+
+auth SHA512
+verb 3
+
+setenv CLIENT_CERT 0
 tun-mtu 1500
 tun-mtu-extra 32
 mssfix 1450
@@ -74,7 +93,26 @@ aeb893d9a96d1f15519bb3c4dcb40ee3
 16672ea16c012664f8a9f11255518deb
 -----END OpenVPN Static key V1-----
 </tls-auth>"},
-   {"id":1,"file":"setenv CLIENT_CERT 0
+{  "id":2,
+  "file":"dev tun
+proto tcp
+
+remote 37.19.205.145 7770
+remote 37.19.205.145 8443
+remote 37.19.205.145 443
+
+remote-random
+resolv-retry infinite
+nobind
+
+# The following setting is only needed for old OpenVPN clients compatibility. New clients
+# automatically negotiate the optimal cipher.
+cipher AES-256-CBC
+
+auth SHA512
+verb 3
+
+setenv CLIENT_CERT 0
 tun-mtu 1500
 tun-mtu-extra 32
 mssfix 1450
@@ -148,7 +186,26 @@ aeb893d9a96d1f15519bb3c4dcb40ee3
 16672ea16c012664f8a9f11255518deb
 -----END OpenVPN Static key V1-----
 </tls-auth>"},
-   {"id":2,"file":"setenv CLIENT_CERT 0
+{   "id":3,
+  "file":"dev tun
+proto tcp
+
+remote 185.107.56.75 7770
+remote 185.107.56.75 8443
+remote 185.107.56.75 443
+
+remote-random
+resolv-retry infinite
+nobind
+
+# The following setting is only needed for old OpenVPN clients compatibility. New clients
+# automatically negotiate the optimal cipher.
+cipher AES-256-CBC
+
+auth SHA512
+verb 3
+
+setenv CLIENT_CERT 0
 tun-mtu 1500
 tun-mtu-extra 32
 mssfix 1450
@@ -221,6 +278,8 @@ a61fc77af39bd81a19218a79762c3386
 aeb893d9a96d1f15519bb3c4dcb40ee3
 16672ea16c012664f8a9f11255518deb
 -----END OpenVPN Static key V1-----
-</tls-auth>
-"}]
+</tls-auth>"},
+
+
+]
 }
